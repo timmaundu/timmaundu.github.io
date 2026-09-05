@@ -65,6 +65,7 @@
     const roles = [
       "AI & full-stack engineer",
       "agents • RAG • automation",
+      "networking • MikroTik • ISP billing",
       "LLM-powered product builder",
       "model economics & evals",
       "software that reaches production",

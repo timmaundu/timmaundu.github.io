@@ -23,7 +23,8 @@ anywhere and on any static host. Dark, modern developer aesthetic.
 ## About the content
 
 Tim is a Kenyan AI & full-stack engineer building practical AI systems: agents,
-RAG workflows, SaaS products, cloud automation and model-evaluation loops. The
+RAG workflows, networking tools, MikroTik/ISP billing systems, SaaS products,
+cloud automation and model-evaluation loops. The
 brand direction follows the public X positioning: useful AI, not noise; African
 builders moving from AI consumption to AI deployment.
 
