@@ -1,6 +1,6 @@
 # timmaundu.github.io — Tim Maundu
 
-Personal brand website for **Tim Maundu** — full-stack software engineer in Nairobi, Kenya.
+Personal brand website for **Tim Maundu** — AI & full-stack engineer in Nairobi, Kenya.
 
 > Live at: **https://timmaundu.github.io/**
 
@@ -12,7 +12,7 @@ anywhere and on any static host. Dark, modern developer aesthetic.
 | Path | What it is |
 |---|---|
 | `index.html` | Landing page — hero, about, skills, projects, journey, contact |
-| `projects.html` | Projects & case notes (MUATIM + supporting systems) |
+| `projects.html` | AI projects, product directions and software case notes |
 | `css/style.css` | Full design system (palette, components, responsive) |
 | `js/main.js` | Scrollspy nav, typed-roles hero, reveals, progress bar |
 | `assets/icons.svg` | Inline SVG icon sprite (no icon library needed) |
@@ -22,11 +22,10 @@ anywhere and on any static host. Dark, modern developer aesthetic.
 
 ## About the content
 
-Tim is a Kenyan full-stack engineer whose main hands-on build is **MUATIM** — a live
-ISP billing & payments platform with end-to-end **M-Pesa** integration (the source
-snapshots in `demo/` and `muatim-central/` are part of this work), plus the
-**MUA Systems** product family (muatim.co.ke). All claims on the site reflect real,
-live products; placeholder-free by design.
+Tim is a Kenyan AI & full-stack engineer building practical AI systems: agents,
+RAG workflows, SaaS products, cloud automation and model-evaluation loops. The
+brand direction follows the public X positioning: useful AI, not noise; African
+builders moving from AI consumption to AI deployment.
 
 ## Dev / local preview
 

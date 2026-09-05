@@ -63,11 +63,11 @@
   const typedEl = $(".typed");
   if (typedEl) {
     const roles = [
-      "full-stack software engineer",
-      "PHP • MySQL • Linux",
-      "M-Pesa & payments integrations",
-      "billing & ops platforms",
-      "product-minded builder",
+      "AI & full-stack engineer",
+      "agents • RAG • automation",
+      "LLM-powered product builder",
+      "model economics & evals",
+      "software that reaches production",
       "Kenya • East Africa Time",
     ];
     let ri = 0, ci = 0, deleting = false;
