@@ -1,107 +1,575 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Tim Maundu builds reliable AI systems, operational automation, and network platforms." />
-    <meta name="theme-color" content="#07111a" />
-    <link rel="canonical" href="https://timmaundu.github.io/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://timmaundu.github.io/" />
-    <meta property="og:title" content="Tim Maundu | AI Systems Builder" />
-    <meta property="og:description" content="AI systems, operational automation, payments, and network platforms built for dependable work." />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Tim Maundu | AI Systems Builder" />
-    <meta name="twitter:description" content="AI systems, operational automation, payments, and network platforms built for dependable work." />
-    <title>Tim Maundu | AI Systems Builder</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/style.css" />
-  </head>
-  <body>
-    <div class="grid-glow" aria-hidden="true"></div>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Tim Maundu home"><span class="brand-mark">TM</span><span>Tim Maundu</span></a>
-      <nav aria-label="Primary navigation">
-        <a href="#work">Work</a>
-        <a href="#principles">Principles</a>
-        <a href="#notes">Notes</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tim Maundu — Full-Stack Software Engineer · Kenya</title>
+  <meta name="description" content="Tim Maundu is a Kenyan full-stack software engineer building web platforms, M-Pesa payment integrations and billing systems — creator of the MUATIM ISP billing platform.">
+  <meta name="author" content="Tim Maundu">
+  <meta name="theme-color" content="#0a0e0c">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tim Maundu">
+  <meta property="og:title" content="Tim Maundu — Full-Stack Software Engineer">
+  <meta property="og:description" content="Web platforms, M-Pesa payment integrations and billing systems built in Kenya. Creator of the MUATIM ISP billing platform.">
+  <meta property="og:url" content="https://timmaundu.github.io/">
+  <meta property="og:image" content="https://timmaundu.github.io/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tim Maundu — Full-Stack Software Engineer">
+  <meta name="twitter:description" content="Web platforms, M-Pesa payment integrations and billing systems built in Kenya. Creator of the MUATIM ISP billing platform.">
+  <meta name="twitter:image" content="https://timmaundu.github.io/assets/og-image.png">
+  <link rel="canonical" href="https://timmaundu.github.io/">
+
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+
+  <div class="bg-glow"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-noise"></div>
+  <div id="progress"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html" aria-label="Tim Maundu — home">
+        <span class="logo-mark">&gt;_</span>
+        <span>tim<b>.maundu</b><span class="dot">.</span><span class="k254">ke</span></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">about</a>
+        <a href="#skills">skills</a>
+        <a href="#projects">projects</a>
+        <a href="#journey">journey</a>
       </nav>
-      <a class="header-link" href="https://github.com/timmaundu" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-    </header>
 
-    <main id="top">
-      <section class="hero section-shell">
-        <div class="hero-copy reveal">
-          <p class="eyebrow"><span></span> AI systems builder · MUATIM.co.ke</p>
-          <h1>I help businesses run their systems with <em>AI agents.</em></h1>
-          <p class="hero-intro">I help businesses run their systems with AI agents that observe operations, investigate problems, automate the routine work, and verify the result.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#work">Explore selected work <span aria-hidden="true">↓</span></a>
-            <a class="button button-secondary" href="https://github.com/timmaundu" target="_blank" rel="noreferrer">View GitHub <span aria-hidden="true">↗</span></a>
+      <div class="nav-cta">
+        <a class="btn btn-primary ghost-only" href="#contact">Let&rsquo;s talk</a>
+        <button class="burger" aria-label="Menu" aria-expanded="false">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- mobile menu -->
+  <div class="mobile-menu" id="mmenu">
+    <a href="#about">about<span>01</span></a>
+    <a href="#skills">skills<span>02</span></a>
+    <a href="#projects">projects<span>03</span></a>
+    <a href="#journey">journey<span>04</span></a>
+    <a href="#contact">contact<span>05</span></a>
+    <a class="btn btn-primary" href="https://github.com/timmaundu" target="_blank" rel="noopener">View GitHub ↗</a>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="reveal">
+        <span class="status-chip"><span class="pulse"></span> available for projects &amp; remote roles</span>
+
+        <h1>Tim&nbsp;Maundu<span class="accent-line">builds software that ships.</span></h1>
+
+        <div class="role-line" aria-live="polite">
+          <span class="prompt">$</span>
+          <span>whoami&nbsp;&rarr;&nbsp;</span>
+          <span class="typed"></span><span class="caret" aria-hidden="true"></span>
+        </div>
+
+        <p class="intro">
+          Full-stack software engineer in <strong>Kenya</strong> — designing, coding and
+          operating web platforms people rely on every day: <strong>M-Pesa payment
+          integrations</strong>, billing and ISP management systems, dashboards and
+          APIs. I take messy operational problems and turn them into dependable software.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">
+            <svg><use href="assets/icons.svg#i-code"/></svg> See my work
+          </a>
+          <a class="btn btn-ghost" href="https://github.com/timmaundu" target="_blank" rel="noopener">
+            <svg><use href="assets/icons.svg#i-github"/></svg> github.com/timmaundu
+          </a>
+        </div>
+
+        <ul class="hero-meta">
+          <li><svg><use href="assets/icons.svg#i-pin"/></svg><span>Nairobi / <b>Kenya</b> · EAT</span></li>
+          <li><svg><use href="assets/icons.svg#i-clock"/></svg><span>since <b>2017</b> on GitHub</span></li>
+        </ul>
+      </div>
+
+      <!-- terminal mock -->
+      <div class="terminal-wrap reveal">
+        <div class="terminal" aria-hidden="true">
+          <div class="terminal-bar">
+            <i></i><i></i><i></i>
+            <span class="t-title">tim@maundu: ~/portfolio</span>
+          </div>
+          <div class="terminal-body">
+            <div class="t-line"><span class="t-prompt">➜&nbsp;</span><span class="t-path">~/portfolio</span> <span class="c">git status</span></div>
+            <div class="t-line"><span class="t-dim">On branch</span> <span class="t-ok">main</span> <span class="t-dim">— building things that matter</span></div>
+            <div class="t-line">&nbsp;</div>
+            <div class="t-line"><span class="t-prompt">➜&nbsp;</span><span class="t-path">~/portfolio</span> <span class="c">cat about.txt</span></div>
+            <div class="t-line tbl">
+              <div><span class="c">name</span><span class="t-out">Tim Maundu</span></div>
+              <div><span class="c">role</span><span class="t-out">Full-stack software engineer</span></div>
+              <div><span class="c">stack</span><span class="t-out">PHP · MySQL · Linux · JavaScript</span></div>
+              <div><span class="c">focus</span><span class="t-out">M-Pesa · billing · ops platforms · APIs</span></div>
+              <div><span class="c">based</span><span class="t-out">Kenya, East Africa (EAT)</span></div>
+            </div>
+            <div class="t-line">&nbsp;</div>
+            <div class="t-line"><span class="t-prompt">➜&nbsp;</span><span class="t-path">~/portfolio</span> <span class="c">./ship --reliably</span></div>
+            <div class="t-line"><span class="t-ok">✓</span> <span class="hl">MUATIM</span> <span class="c">— ISP billing &amp; payments platform (live)</span></div>
+            <div class="t-line"><span class="t-ok">✓</span> <span class="hl">provisioning</span> <span class="c">— automated server &amp; router rollout</span></div>
+            <div class="t-line"><span class="t-dim">…next: building the next useful thing</span></div>
+            <div class="t-line">&nbsp;</div>
+            <div class="t-line"><span class="t-prompt">➜&nbsp;</span><span class="t-path">~/portfolio</span> <span class="c">git push --dreams origin/future</span></div>
+            <div class="t-line"><span class="t-out">hint: always keep shipping</span></div>
           </div>
         </div>
-        <div class="system-panel reveal delay-1" aria-label="Illustration of an AI operations system">
-          <div class="system-topline"><span class="signal"></span><span>OPERATIONAL INTELLIGENCE</span><span class="live">LIVE</span></div>
-          <div class="system-core">
-            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-            <div class="core"><span>AI</span><small>evidence<br />first</small></div>
-            <div class="node node-a"><b>01</b><span>Observe</span></div>
-            <div class="node node-b"><b>02</b><span>Investigate</span></div>
-            <div class="node node-c"><b>03</b><span>Approve</span></div>
-            <div class="node node-d"><b>04</b><span>Verify</span></div>
+        <div class="terminal-float f1"><span class="ico"></span> uptime: 99.9%</div>
+        <div class="terminal-float f2"><span class="ico"></span> M-Pesa: online</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <a class="scroll-cue" href="#about"><span class="line"></span> scroll</a>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>PHP</span><span>MySQL</span><span>M-Pesa Daraja API</span><span>Linux Servers</span><span>Billing Platforms</span><span>JavaScript</span><span>MikroTik</span><span>REST APIs</span><span>SaaS Products</span><span>Docker</span><span>Nginx</span><span>Automation</span>
+      <span>PHP</span><span>MySQL</span><span>M-Pesa Daraja API</span><span>Linux Servers</span><span>Billing Platforms</span><span>JavaScript</span><span>MikroTik</span><span>REST APIs</span><span>SaaS Products</span><span>Docker</span><span>Nginx</span><span>Automation</span>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">01 — about</span>
+          <h2>Engineer. Builder. Problem-solver.</h2>
+          <p class="lead">I write code, run servers and own the outcome — from the first SQL table to the last dashboard widget.</p>
+        </div>
+        <span class="mono-tag">// since 2017</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>
+            I&rsquo;m a <strong>full-stack software engineer from Kenya</strong> who likes building software
+            that makes real work easier. Not demos, not tutorials — systems that people
+            depend on after the launch party: billing that reconciles correctly,
+            payments that clear on time, dashboards that tell the truth.
+          </p>
+          <p>
+            My main hands-on project is <strong>MUATIM</strong>, a live ISP billing &amp; payments
+            platform (the codebase snapshot in this very repo). It handles <strong>M-Pesa
+            payments end-to-end</strong>, customer management, package billing, network
+            operations and automation for internet providers — plus the provisioning
+            tooling that rolls it out to production servers and routers.
+          </p>
+          <blockquote class="blockquote">
+            “Software that removes friction beats software that adds features.”
+            <cite>— a principle I code by</cite>
+          </blockquote>
+          <p>
+            I work close to the problem: local payment rails, uneven connectivity,
+            growing teams and operations that need clear accountability. That&rsquo;s what
+            makes software useful — and what keeps me building.
+          </p>
+        </div>
+
+        <div class="reveal">
+          <div class="fact-card">
+            <h3><svg><use href="assets/icons.svg#i-gear"/></svg> tech snapshot</h3>
+            <ul class="facts">
+              <li><span class="k">core</span><span class="v">PHP · MySQL · Linux</span></li>
+              <li><span class="k">payments</span><span class="v">M-Pesa Daraja (STK Push &amp; APIs)</span></li>
+              <li><span class="k">frontend</span><span class="v">HTML · CSS · JavaScript</span></li>
+              <li><span class="k">infra</span><span class="v">Nginx · Docker · MikroTik · bash</span></li>
+              <li><span class="k">products</span><span class="v">SaaS · billing · ops dashboards</span></li>
+              <li><span class="k">currently</span><span class="v">MUATIM · new builds</span></li>
+            </ul>
           </div>
-          <div class="system-footer"><span>STATUS <b>VERIFIED</b></span><span>MODE <b>ASSISTED</b></span><span>TRACE <b>#AT-042</b></span></div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <section class="proof-strip section-shell reveal" aria-label="Focus areas">
-        <div><strong>AI agents</strong><span>with evidence and guardrails</span></div>
-        <div><strong>Operational automation</strong><span>that is observable and reversible</span></div>
-        <div><strong>Payments and networks</strong><span>designed for real-world reliability</span></div>
-      </section>
-
-      <section id="work" class="work section-shell">
-        <div class="section-heading reveal"><p class="eyebrow"><span></span> Selected work</p><h2>Complex operations, made practical.</h2><p>Software should reduce uncertainty, not add another dashboard to babysit.</p></div>
-        <div class="project-grid">
-          <article class="project project-featured reveal">
-            <div class="project-visual agent-visual"><div class="visual-header"><span>AGENT-TIM</span><i></i><i></i><i></i></div><div class="timeline"><div><b>01</b><span>Router signal received</span><small>12:04:28</small></div><div><b>02</b><span>Evidence collected</span><small>12:04:31</small></div><div class="active"><b>03</b><span>Repair verified</span><small>12:04:44</small></div></div></div>
-            <div class="project-content"><p class="project-label">AI OPERATIONS</p><h3>Agent-TIM</h3><p>An evidence-first AI operations layer that observes systems, investigates incidents, stages safe repairs, and verifies results.</p><ul><li>Clear ownership and action timelines</li><li>Approval gates for meaningful risk</li><li>Recovery proof, not assumed success</li></ul></div>
-          </article>
-          <article class="project reveal delay-1">
-            <div class="project-visual muatim-visual"><span>MUATIM</span><div class="metric-row"><b>29</b><small>active systems</small></div><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
-            <div class="project-content"><p class="project-label">ISP OPERATIONS</p><h3>MUATIM</h3><p>A multi-tenant billing and network operations platform for broadband providers, combining customer lifecycle, router fleet health, and payment workflows.</p></div>
-          </article>
-          <article class="project reveal delay-2">
-            <div class="project-visual payment-visual"><span>PAYMENT TO CONNECTION</span><div class="payment-flow"><b>PAYMENT</b><i></i><b>ACTIVATION</b><i></i><b>VERIFIED</b></div></div>
-            <div class="project-content"><p class="project-label">WORKFLOW DESIGN</p><h3>Payment to Connection</h3><p>Reliable payment confirmation and service activation flows that avoid duplicate charges, blind retries, and customers left offline after paying.</p></div>
-          </article>
+  <!-- ============ SKILLS ============ -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">02 — skills</span>
+          <h2>What I work with</h2>
+          <p class="lead">Chosen for dependable outcomes — not for hype. Enough range to own a product end-to-end.</p>
         </div>
-      </section>
+        <span class="mono-tag">// full-stack toolkit</span>
+      </div>
 
-      <section id="principles" class="principles section-shell">
-        <div class="section-heading reveal"><p class="eyebrow"><span></span> How I build</p><h2>Useful AI needs discipline.</h2></div>
-        <div class="principle-grid">
-          <article class="reveal"><span>01</span><h3>Evidence before action</h3><p>Systems collect the facts first. They do not turn a guess into a production change.</p></article>
-          <article class="reveal delay-1"><span>02</span><h3>Safe autonomy</h3><p>Low-risk known repairs can move quickly. Financial and access decisions remain deliberate and traceable.</p></article>
-          <article class="reveal delay-2"><span>03</span><h3>Verification is part of done</h3><p>A repair is complete only when the expected outcome is measured and recorded.</p></article>
-          <article class="reveal delay-3"><span>04</span><h3>Design for operators</h3><p>Good software gives people context, confidence, and the shortest path to the next right action.</p></article>
+      <div class="skills-grid" data-stagger>
+        <div class="skill-card reveal">
+          <div class="sc-head">
+            <span class="sc-ico"><svg><use href="assets/icons.svg#i-code"/></svg></span>
+            <h3>Backend &amp; APIs</h3>
+            <span class="sc-num">/01</span>
+          </div>
+          <div class="tag-row">
+            <span class="tag solid">PHP</span><span class="tag">REST APIs</span><span class="tag">MySQL</span><span class="tag">MariaDB</span><span class="tag">MVC</span>
+          </div>
         </div>
-      </section>
 
-      <section id="notes" class="notes section-shell">
-        <div class="section-heading reveal"><p class="eyebrow"><span></span> Build notes</p><h2>Thinking in public.</h2><p>Writing about the decisions behind dependable AI and operations systems.</p></div>
-        <div class="note-list reveal">
-          <a href="https://github.com/timmaundu" target="_blank" rel="noreferrer"><span>01</span><div><h3>Why payment confirmation must not wait for the router</h3><p>A better boundary between financial truth and network activation.</p></div><b>↗</b></a>
-          <a href="https://github.com/timmaundu" target="_blank" rel="noreferrer"><span>02</span><div><h3>Designing safe AI agents for operational systems</h3><p>Evidence, approval, idempotency, and recovery proof.</p></div><b>↗</b></a>
-          <a href="https://github.com/timmaundu" target="_blank" rel="noreferrer"><span>03</span><div><h3>From router alert to root-cause incident</h3><p>Building a signal path that helps operators act with confidence.</p></div><b>↗</b></a>
+        <div class="skill-card reveal">
+          <div class="sc-head">
+            <span class="sc-ico"><svg><use href="assets/icons.svg#i-coins"/></svg></span>
+            <h3>Payments &amp; M-Pesa</h3>
+            <span class="sc-num">/02</span>
+          </div>
+          <div class="tag-row">
+            <span class="tag solid">Daraja STK Push</span><span class="tag">Callbacks</span><span class="tag">Reconciliation</span><span class="tag">Webhooks</span>
+          </div>
         </div>
-      </section>
 
-      <section class="contact section-shell reveal"><p class="eyebrow"><span></span> Collaboration</p><h2>Let’s build systems people can trust.</h2><a class="button button-primary" href="https://github.com/timmaundu" target="_blank" rel="noreferrer">Find me on GitHub <span aria-hidden="true">↗</span></a></section>
-    </main>
-    <footer><a class="brand" href="#top"><span class="brand-mark">TM</span><span>Tim Maundu</span></a><span>AI systems, automation, and useful infrastructure.</span><span>© <span id="year"></span></span></footer>
-    <script src="assets/app.js"></script>
-  </body>
+        <div class="skill-card reveal">
+          <div class="sc-head">
+            <span class="sc-ico"><svg><use href="assets/icons.svg#i-db"/></svg></span>
+            <h3>Data &amp; reliability</h3>
+            <span class="sc-num">/03</span>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Schema design</span><span class="tag">Queries</span><span class="tag">Backups</span><span class="tag">Cron jobs</span><span class="tag">Audit logs</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="sc-head">
+            <span class="sc-ico"><svg><use href="assets/icons.svg#i-router"/></svg></span>
+            <h3>Networks &amp; ISP ops</h3>
+            <span class="sc-num">/04</span>
+          </div>
+          <div class="tag-row">
+            <span class="tag">MikroTik</span><span class="tag">Hotspot</span><span class="tag">PPPoE</span><span class="tag">Vouchers</span><span class="tag">Bandwidth mgmt</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="sc-head">
+            <span class="sc-ico"><svg><use href="assets/icons.svg#i-cloud"/></svg></span>
+            <h3>Servers &amp; deployment</h3>
+            <span class="sc-num">/05</span>
+          </div>
+          <div class="tag-row">
+            <span class="tag">Linux</span><span class="tag">Nginx</span><span class="tag">Docker</span><span class="tag">Provisioning</span><span class="tag">SSL</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="sc-head">
+            <span class="sc-ico"><svg><use href="assets/icons.svg#i-spark"/></svg></span>
+            <h3>Frontend &amp; products</h3>
+            <span class="sc-num">/06</span>
+          </div>
+          <div class="tag-row">
+            <span class="tag">HTML/CSS</span><span class="tag">JavaScript</span><span class="tag">Dashboards</span><span class="tag">UX thinking</span><span class="tag">Responsive</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">03 — projects</span>
+          <h2>Things I&rsquo;ve built</h2>
+          <p class="lead">Shipped code over slideware. The flagship is live — the rest are the systems around it.</p>
+        </div>
+        <a class="btn btn-ghost" href="https://github.com/timmaundu?tab=repositories" target="_blank" rel="noopener">
+          <svg><use href="assets/icons.svg#i-github"/></svg> All repos
+        </a>
+      </div>
+
+      <!-- flagship -->
+      <div class="featured reveal">
+        <div class="feat-inner">
+          <div class="feat-copy">
+            <div class="feat-label">
+              <span class="live-dot"><i></i> flagship · live product</span>
+              <span class="mono-tag">muatim.co.ke</span>
+            </div>
+            <h3>MUATIM — ISP billing &amp; payments platform</h3>
+            <p>
+              A complete billing system for internet service providers, built around
+              how money actually moves in Kenya. Handles customer lifecycle, packages
+              and billing — with <strong>M-Pesa payments collected, verified and
+              reconciled automatically</strong>.
+            </p>
+            <ul class="feat-list">
+              <li><svg><use href="assets/icons.svg#i-zap"/></svg> <span>M-Pesa STK Push payments with automatic callback reconciliation</span></li>
+              <li><svg><use href="assets/icons.svg#i-brief"/></svg> <span>Customers, packages, billing cycles &amp; payment history in one place</span></li>
+              <li><svg><use href="assets/icons.svg#i-router"/></svg> <span>Network operations: MikroTik routers, hotspot/PPPoE &amp; voucher flows</span></li>
+              <li><svg><use href="assets/icons.svg#i-wrench"/></svg> <span>Admin panels, mobile-friendly customer tools &amp; scheduled automation</span></li>
+            </ul>
+            <div class="feat-actions">
+              <a class="btn btn-primary" href="https://muatim.co.ke" target="_blank" rel="noopener">
+                <svg><use href="assets/icons.svg#i-ext"/></svg> Visit the product
+              </a>
+              <a class="btn btn-ghost" href="projects.html#muatim">
+                case notes →
+              </a>
+            </div>
+            <div class="feat-links">
+              <span>php · mysql · mpesa</span>
+              <span>·</span>
+              <span>docker · nginx</span>
+              <span>·</span>
+              <span>provisioned &amp; operated by me</span>
+            </div>
+          </div>
+
+          <div class="feat-visual" aria-hidden="true">
+            <div class="dash-mock">
+              <div class="dash-top">
+                <span>muatim // payments dashboard</span>
+                <span class="dots"><i></i><i></i><i></i></span>
+              </div>
+              <div class="dash-body">
+                <div class="kpis">
+                  <div class="kpi"><b>KSh 1.4M</b><span>collected (mo)</span></div>
+                  <div class="kpi"><b>3,820</b><span>active customers</span></div>
+                  <div class="kpi"><b>99.9%</b><span>payment uptime</span></div>
+                </div>
+                <div class="dash-row"><span class="lbl">M-Pesa transactions today</span><span class="amt ok">✓ 214 settled</span></div>
+                <div class="dash-bar"><i style="width:86%"></i></div>
+                <div class="dash-row"><span class="lbl">Auto-reconciliation</span><span class="amt ok">running</span></div>
+                <div class="dash-bar"><i style="width:100%"></i></div>
+                <div class="dash-row"><span class="lbl">Expiring packages (7d)</span><span class="amt">63 flagged</span></div>
+                <div class="dash-bar"><i style="width:34%;background:linear-gradient(90deg,#e6a23c,#f0c24a)"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- more projects -->
+      <div class="cards-grid">
+        <div class="card reveal">
+          <div class="card-top">
+            <span class="card-ico"><svg><use href="assets/icons.svg#i-wrench"/></svg></span>
+            <span class="mono-tag">repo snapshot</span>
+          </div>
+          <h3>Provisioning &amp; deployment tooling</h3>
+          <p class="desc">
+            Automated setup that takes MUATIM from bare server to production —
+            <strong>Docker + MySQL + Nginx</strong> configuration, firewall hardening
+            and repeatable installs. One server, one script, predictable result.
+          </p>
+          <div class="card-footer">
+            <span class="stat">bash · docker · mysql</span>
+            <a class="card-link" href="https://muatim.co.ke" target="_blank" rel="noopener">deployed with this <svg><use href="assets/icons.svg#i-arrow"/></svg></a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-top">
+            <span class="card-ico"><svg><use href="assets/icons.svg#i-brain"/></svg></span>
+            <span class="mono-tag">product family</span>
+          </div>
+          <h3>MUA Systems product line</h3>
+          <p class="desc">
+            Beyond MUATIM: a growing portfolio of <strong>Kenyan-built products</strong> —
+            Hakili AI (legal research) and MUA Jobs (AI-assisted employment) —
+            sharing one engineering foundation for identity, payments and APIs.
+          </p>
+          <div class="card-footer">
+            <span class="stat">saas · ai · payments</span>
+            <a class="card-link" href="https://muatim.co.ke" target="_blank" rel="noopener">muatim.co.ke <svg><use href="assets/icons.svg#i-arrow"/></svg></a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-top">
+            <span class="card-ico"><svg><use href="assets/icons.svg#i-code"/></svg></span>
+            <span class="mono-tag">open source</span>
+          </div>
+          <h3>Maintained open-source stack</h3>
+          <p class="desc">
+            I work on and maintain <strong>open-source software</strong> that powers
+            real ISPs — customising, hardening and extending the stack so it fits
+            Kenyan payment and operating realities.
+          </p>
+          <div class="card-footer">
+            <span class="stat">php · mit-licensed ecosystem</span>
+            <a class="card-link" href="https://github.com/timmaundu?tab=repositories" target="_blank" rel="noopener">my repos <svg><use href="assets/icons.svg#i-arrow"/></svg></a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-top">
+            <span class="card-ico"><svg><use href="assets/icons.svg#i-db"/></svg></span>
+            <span class="mono-tag">ops</span>
+          </div>
+          <h3>Payments ops &amp; reconciliation</h3>
+          <p class="desc">
+            The unglamorous work that keeps money honest: <strong>callback handling,
+            transaction matching, failure retries and audit trails</strong> so that
+            what M-Pesa says always agrees with what the system says.
+          </p>
+          <div class="card-footer">
+            <span class="stat">daraja · webhooks · mysql</span>
+            <a class="card-link" href="https://muatim.co.ke" target="_blank" rel="noopener">running on MUATIM <svg><use href="assets/icons.svg#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-band reveal">
+        <p>Want the full list of projects &amp; case notes?</p>
+        <a class="btn btn-primary" href="projects.html">Open projects page <svg><use href="assets/icons.svg#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JOURNEY ============ -->
+  <section class="section section-alt" id="journey">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">04 — journey</span>
+          <h2>How I got here</h2>
+          <p class="lead">Short version. The long version involves a lot of 2 a.m. deployments.</p>
+        </div>
+        <span class="mono-tag">// timeline</span>
+      </div>
+
+      <div class="journey">
+        <div class="journey-line">
+          <div class="journey-item reveal">
+            <div class="j-date">2017</div>
+            <div class="j-body">
+              <h3>Started on GitHub</h3>
+              <p>
+                Created my GitHub workspace and began the long, rewarding climb of
+                learning software by building it — commits before certificates.
+              </p>
+              <div class="j-tags"><span class="tag">github</span><span class="tag">self-taught</span></div>
+            </div>
+          </div>
+
+          <div class="journey-item reveal">
+            <div class="j-date">2020s</div>
+            <div class="j-body">
+              <h3>Went deep on real-world systems</h3>
+              <p>
+                From code into full-stack product work: <b>PHP and MySQL</b> backends,
+                payment integration, server administration and the operational side
+                of software — <b>deployment, monitoring, backups, reconciliation</b>.
+              </p>
+              <div class="j-tags"><span class="tag">php</span><span class="tag">mysql</span><span class="tag">linux</span><span class="tag">payments</span></div>
+            </div>
+          </div>
+
+          <div class="journey-item reveal">
+            <div class="j-date">now</div>
+            <div class="j-body">
+              <h3>Building &amp; operating MUATIM</h3>
+              <p>
+                Designing, coding and running a <b>live ISP billing and M-Pesa payments
+                platform</b> — and the MUA Systems product family around it. Owning the
+                full loop: features, infra, payments and uptime.
+              </p>
+              <div class="j-tags"><span class="tag solid">muatim</span><span class="tag">saas</span><span class="tag">docker</span><span class="tag">daraja</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-card reveal">
+        <span class="eyebrow" style="justify-content:center">05 — contact</span>
+        <h2>Let&rsquo;s build something <span class="grn">useful</span>.</h2>
+        <p>
+          Need a platform built, payments wired up, or a stubborn system made
+          dependable? I&rsquo;m open to projects, collaborations and remote roles.
+          GitHub is where I live — find me there.
+        </p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="https://github.com/timmaundu" target="_blank" rel="noopener">
+            <svg><use href="assets/icons.svg#i-github"/></svg> github.com/timmaundu
+          </a>
+          <a class="btn btn-ghost" href="https://github.com/timmaundu" target="_blank" rel="noopener">
+            <svg><use href="assets/icons.svg#i-mail"/></svg> DM me on GitHub
+          </a>
+        </div>
+        <p class="contact-note">
+          <span class="t-prompt" style="color:var(--accent)">~/profile</span>
+          <span style="color:var(--faint)">open to →</span>
+        </p>
+        <div class="open-tags">
+          <span class="tag solid">remote full-stack roles</span>
+          <span class="tag">billing / fintech builds</span>
+          <span class="tag">M-Pesa integrations</span>
+          <span class="tag">ISP / telecom software</span>
+          <span class="tag">product consultations</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="container">
+      <div class="foot-grid">
+        <div class="foot-left">
+          <a class="logo" href="#top">
+            <span class="logo-mark">&gt;_</span>
+            <span>tim<b>.maundu</b><span class="dot">.</span><span class="k254">ke</span></span>
+          </a>
+          <p>Full-stack software engineer · Nairobi, Kenya</p>
+        </div>
+        <nav class="foot-nav" aria-label="Footer">
+          <a href="#about">about</a>
+          <a href="#skills">skills</a>
+          <a href="#projects">projects</a>
+          <a href="#journey">journey</a>
+          <a href="projects.html">projects page</a>
+        </nav>
+        <div class="socials">
+          <a href="https://github.com/timmaundu" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg><use href="assets/icons.svg#i-github"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <p>© <span class="year">2026</span> Tim Maundu · built &amp; operated by me</p>
+        <p class="mono-tag" style="color:var(--faint);font-size:.78rem">Nairobi, Kenya · EAT · v1.0</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="toTop" aria-label="Back to top">
+    <svg><use href="assets/icons.svg#i-up"/></svg>
+  </button>
+</body>
 </html>

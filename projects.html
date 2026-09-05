@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Tim Maundu</title>
+  <meta name="description" content="Projects and case notes by Tim Maundu: MUATIM ISP billing platform with M-Pesa payments, provisioning tooling, MUA Systems product family and more.">
+  <meta name="author" content="Tim Maundu">
+  <meta name="theme-color" content="#0a0e0c">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tim Maundu">
+  <meta property="og:title" content="Projects — Tim Maundu">
+  <meta property="og:description" content="MUATIM ISP billing & M-Pesa platform, provisioning tooling and the MUA Systems product family.">
+  <meta property="og:url" content="https://timmaundu.github.io/projects.html">
+  <meta property="og:image" content="https://timmaundu.github.io/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://timmaundu.github.io/projects.html">
+
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+
+  <div class="bg-glow"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-noise"></div>
+  <div id="progress"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav scrolled" id="top">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html" aria-label="Tim Maundu — home">
+        <span class="logo-mark">&gt;_</span>
+        <span>tim<b>.maundu</b><span class="dot">.</span><span class="k254">ke</span></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#about">about</a>
+        <a href="index.html#skills">skills</a>
+        <a href="index.html#projects">projects</a>
+        <a href="index.html#journey">journey</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn btn-primary ghost-only" href="index.html#contact">Let&rsquo;s talk</a>
+        <button class="burger" aria-label="Menu" aria-expanded="false">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mmenu">
+    <a href="index.html#about">about<span>01</span></a>
+    <a href="index.html#skills">skills<span>02</span></a>
+    <a href="index.html#projects">projects<span>03</span></a>
+    <a href="index.html#journey">journey<span>04</span></a>
+    <a href="index.html#contact">contact<span>05</span></a>
+    <a class="btn btn-primary" href="https://github.com/timmaundu" target="_blank" rel="noopener">View GitHub ↗</a>
+  </div>
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero">
+    <div class="container reveal">
+      <p class="breadcrumb"><a href="index.html">~/home</a> → projects</p>
+      <h1>Projects &amp; case notes</h1>
+      <p class="lead">
+        The useful things I&rsquo;ve shipped. Flagship first — then the platforms,
+        tooling and systems around it. More appear here as they go live.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ FLAGSHIP CASE ============ -->
+  <section class="section section-alt" id="muatim" style="padding-top:40px">
+    <div class="container">
+      <div class="featured reveal">
+        <div class="feat-inner" style="grid-template-columns:1fr">
+          <div class="feat-copy" style="grid-column:1">
+            <div class="feat-label">
+              <span class="live-dot"><i></i> flagship · live product</span>
+              <span class="mono-tag">muatim.co.ke</span>
+              <span class="mono-tag">01/04</span>
+            </div>
+            <h3>MUATIM — ISP billing &amp; payments platform</h3>
+            <p>
+              Internet providers run on three things: customers, bandwidth and money.
+              MUATIM is the system I designed and built to run all three — a complete
+              billing platform for ISPs where <strong>M-Pesa is a first-class citizen</strong>,
+              not an afterthought bolted onto a voucher system.
+            </p>
+            <div class="about-grid" style="grid-template-columns:1fr 1fr; gap:34px; margin:6px 0 8px">
+              <div>
+                <h4 style="margin-bottom:10px;color:var(--accent);font-family:var(--font-mono);font-size:.85rem;letter-spacing:.08em">THE PROBLEM</h4>
+                <p style="font-size:.95rem">
+                  ISP operators were juggling spreadsheets, WhatsApp payment screenshots
+                  and manual router configs. Reconciliation was manual, renewals were
+                  missed, and growth meant more chaos.
+                </p>
+              </div>
+              <div>
+                <h4 style="margin-bottom:10px;color:var(--accent);font-family:var(--font-mono);font-size:.85rem;letter-spacing:.08em">THE APPROACH</h4>
+                <p style="font-size:.95rem">
+                  One dependable platform: customers and packages in a clean billing
+                  engine, M-Pesa STK Push payments verified by callback, everything
+                  reconciled automatically, and network operations wired in.
+                </p>
+              </div>
+            </div>
+            <ul class="feat-list">
+              <li><svg><use href="assets/icons.svg#i-coins"/></svg> <span><b>Payments that reconcile themselves</b> — Daraja API integration: STK Push initiated in-app, callback verified, balance updated, receipt logged. Failure paths handled and retried.</span></li>
+              <li><svg><use href="assets/icons.svg#i-brief"/></svg> <span><b>Billing engine</b> — packages, billing cycles, auto-renewal via customer balance, expiry handling and payment history.</span></li>
+              <li><svg><use href="assets/icons.svg#i-router"/></svg> <span><b>Network operations</b> — MikroTik router management, hotspot &amp; PPPoE flows, voucher generation and bandwidth management.</span></li>
+              <li><svg><use href="assets/icons.svg#i-wrench"/></svg> <span><b>Operational surface</b> — admin dashboards, customer-facing self-service screens, SMS/notification hooks and scheduled cron automation.</span></li>
+            </ul>
+            <div class="feat-actions">
+              <a class="btn btn-primary" href="https://muatim.co.ke" target="_blank" rel="noopener">
+                <svg><use href="assets/icons.svg#i-ext"/></svg> muatim.co.ke
+              </a>
+              <a class="btn btn-ghost" href="https://github.com/timmaundu" target="_blank" rel="noopener">
+                <svg><use href="assets/icons.svg#i-github"/></svg> GitHub profile
+              </a>
+            </div>
+            <div class="feat-links">
+              <span>php · mysql · mpesa daraja · mikrotik · docker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OTHER WORK ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">// more work</span>
+          <h2>Around the flagship</h2>
+        </div>
+        <span class="mono-tag">02/04 — 04/04</span>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card reveal">
+          <div class="card-top">
+            <span class="card-ico"><svg><use href="assets/icons.svg#i-wrench"/></svg></span>
+            <span class="mono-tag">case 02</span>
+          </div>
+          <h3>Provisioning &amp; deployment tooling</h3>
+          <p class="desc">
+            <strong>Problem:</strong> a fresh MUATIM install meant hours of manual server
+            work. <strong>Solution:</strong> a repeatable provisioning pipeline — Docker,
+            MySQL and Nginx wired together, firewall rules applied, configs validated —
+            so a new deployment is boring and predictable.
+          </p>
+          <div class="tag-row" style="margin:2px 0 4px">
+            <span class="tag">docker</span><span class="tag">nginx</span><span class="tag">mysql</span><span class="tag">bash</span><span class="tag">firewall</span>
+          </div>
+          <div class="card-footer">
+            <span class="stat">infra · repeatable · boring-by-design</span>
+            <a class="card-link" href="https://muatim.co.ke" target="_blank" rel="noopener">in production <svg><use href="assets/icons.svg#i-arrow"/></svg></a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-top">
+            <span class="card-ico"><svg><use href="assets/icons.svg#i-db"/></svg></span>
+            <span class="mono-tag">case 03</span>
+          </div>
+          <h3>Payments ops: callbacks, retries &amp; audit</h3>
+          <p class="desc">
+            The quiet backbone of any billing product. Callback ingestion, idempotent
+            transaction matching, <strong>automatic reconciliation of M-Pesa statements</strong>,
+            retry queues for failed operations and full audit trails — money handling
+            where “it&rsquo;s fine, trust me” is never an acceptable answer.
+          </p>
+          <div class="tag-row" style="margin:2px 0 4px">
+            <span class="tag">daraja</span><span class="tag">webhooks</span><span class="tag">idempotency</span><span class="tag">cron</span><span class="tag">mysql</span>
+          </div>
+          <div class="card-footer">
+            <span class="stat">fintech ops · trust-critical</span>
+            <a class="card-link" href="https://muatim.co.ke" target="_blank" rel="noopener">running on MUATIM <svg><use href="assets/icons.svg#i-arrow"/></svg></a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-top">
+            <span class="card-ico"><svg><use href="assets/icons.svg#i-brain"/></svg></span>
+            <span class="mono-tag">case 04</span>
+          </div>
+          <h3>MUA Systems product family</h3>
+          <p class="desc">
+            A shared engineering foundation — identity, payments, automation,
+            notifications, data and APIs — with focused products on top:
+            <strong>Hakili AI</strong> (legal intelligence) and <strong>MUA Jobs</strong>
+            (AI-assisted employment), built for African operating realities.
+          </p>
+          <div class="tag-row" style="margin:2px 0 4px">
+            <span class="tag">saas</span><span class="tag">ai</span><span class="tag">api-first</span><span class="tag">ke-made</span>
+          </div>
+          <div class="card-footer">
+            <span class="stat">product line · in development</span>
+            <a class="card-link" href="https://muatim.co.ke" target="_blank" rel="noopener">muatim.co.ke <svg><use href="assets/icons.svg#i-arrow"/></svg></a>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-top">
+            <span class="card-ico"><svg><use href="assets/icons.svg#i-code"/></svg></span>
+            <span class="mono-tag">open source</span>
+          </div>
+          <h3>Open-source contributions &amp; maintenance</h3>
+          <p class="desc">
+            Customising, hardening and extending open-source stacks used by real ISPs —
+            security fixes, M-Pesa payment gateway integration, billing features and
+            operational improvements. <strong>Source snapshots live in private engineering repos.</strong>
+          </p>
+          <div class="tag-row" style="margin:2px 0 4px">
+            <span class="tag">php</span><span class="tag">security</span><span class="tag">gateways</span><span class="tag">maintenance</span>
+          </div>
+          <div class="card-footer">
+            <span class="stat">giving back · using it daily</span>
+            <a class="card-link" href="https://github.com/timmaundu" target="_blank" rel="noopener">on GitHub <svg><use href="assets/icons.svg#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-band reveal">
+        <p>Something here worth building together? <b>Let&rsquo;s talk.</b></p>
+        <a class="btn btn-primary" href="https://github.com/timmaundu" target="_blank" rel="noopener">
+          <svg><use href="assets/icons.svg#i-github"/></svg> GitHub — timmaundu
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="container">
+      <div class="foot-grid">
+        <div class="foot-left">
+          <a class="logo" href="index.html">
+            <span class="logo-mark">&gt;_</span>
+            <span>tim<b>.maundu</b><span class="dot">.</span><span class="k254">ke</span></span>
+          </a>
+          <p>Full-stack software engineer · Nairobi, Kenya</p>
+        </div>
+        <nav class="foot-nav" aria-label="Footer">
+          <a href="index.html">home</a>
+          <a href="index.html#about">about</a>
+          <a href="index.html#skills">skills</a>
+          <a href="index.html#journey">journey</a>
+          <a href="index.html#contact">contact</a>
+        </nav>
+        <div class="socials">
+          <a href="https://github.com/timmaundu" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg><use href="assets/icons.svg#i-github"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <p>© <span class="year">2026</span> Tim Maundu · built &amp; operated by me</p>
+        <p class="mono-tag" style="color:var(--faint);font-size:.78rem">Nairobi, Kenya · EAT · v1.0</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="toTop" aria-label="Back to top">
+    <svg><use href="assets/icons.svg#i-up"/></svg>
+  </button>
+</body>
+</html>
